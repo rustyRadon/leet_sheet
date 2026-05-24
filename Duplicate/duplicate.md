@@ -16,7 +16,7 @@ That is the entire pattern.
 
 ## Example
 
-* Contains Duplicate
+* Contains Duplicate faaaaa
 
 ## Problem Meaning
 
@@ -239,6 +239,9 @@ NOT plain HashSet.
 
 ---
 
+* OPTION 1 — Ordered Structure
+* OPTION 2 — Bucketing
+
 ## Core Idea
 
 Now you need:
@@ -257,7 +260,7 @@ This problem is much harder because it combines:
 
 | Problem Type     | Main Idea         | Main Structure            |
 | ---------------- | ----------------- | ------------------------- |
-| Exact duplicate  | seen before?      | HashSet                   |
+| Exact duplicate  | seen before?      | HashSet/re-ordered set    |
 | Nearby duplicate | recent duplicates | Sliding Window + HashSet  |
 | Almost duplicate | nearby values     | Ordered Structure/Buckets |
 | Count frequency  | count occurrences | HashMap                   |
@@ -388,9 +391,6 @@ Range:
 
 # MOST IMPORTANT LESSON
 
-Strong DSA is NOT memorizing solutions.
-
-It is learning:
 
 ```text
 problem clue -> data structure pattern
@@ -407,4 +407,4 @@ Examples:
 | ordered values  | Sorting/Tree             |
 | ranges          | Prefix Sum / Ordered Set |
 
-That pattern recognition is the real skill.
+That pattern recognition is the real skill
