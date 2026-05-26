@@ -56,7 +56,6 @@ impl Window {
         self.elements.remove(index);
     }
 
-    // returns smallest abs_diff for x
     fn push_right(&mut self, x: i32) -> i32 {
         assert!(!self.elements.is_empty());
         match self.elements.binary_search(&x) {
